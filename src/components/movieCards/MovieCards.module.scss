@@ -1,0 +1,35 @@
+.cards {
+    background-color: #161d25;
+
+    .cards_box {
+        padding: 50px 0;
+
+        .cards_title {
+            color: #a5bbdc;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 1.1;
+            padding-bottom: 20px;
+
+
+        }
+
+        .cards_card {
+            width: 75%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+
+        }
+
+        .cards_pagination {
+            width: 75%;
+          display: flex;
+          justify-content: center;
+
+        }
+    }
+}

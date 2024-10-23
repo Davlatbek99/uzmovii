@@ -1,0 +1,274 @@
+.header {
+    .header_top {
+        background-color: #222933;
+        height: 100px;
+        border-bottom: 1px solid #313842;
+
+        .header_top_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header_mainIcon {
+                width: 290px;
+                height: 80px;
+            }
+
+            .header_links {
+                display: flex;
+                height: 100px;
+
+                .header_link_one {
+                    &:hover {
+                        color: white;
+                        opacity: 1;
+                        transition: all ease 600ms;
+                    }
+
+                    transition: all ease 600ms;
+                    color: #99b1d4;
+                    padding: 40px 12px;
+                    font-size: 14px;
+
+                    &.active {
+                        opacity: 1;
+                    }
+
+                    .caret {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        margin-left: 6px;
+                        vertical-align: middle;
+                        border-top: 4px solid;
+                        border-right: 4px solid #fff0;
+                        border-left: 4px solid #fff0;
+
+                    }
+                }
+
+                .header_link_boshsahifa {
+                    &:hover {
+                        background-color: rgb(255 105 7 / 50%);
+                    }
+
+                    border-bottom: 1px solid #ff6907;
+                }
+
+                .header_link_kinolar {
+                    &:hover {
+                        background-color: rgb(46 204 113 / 40%)
+                    }
+
+                    border-bottom: 1px solid #ff6907;
+                }
+
+                .header_link_kinolar {
+                    &:hover {
+                        background-color: rgb(46 204 113 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(46 204 113);
+                }
+
+                .header_link_seriallar {
+                    &:hover {
+                        background-color: rgb(2 176 228 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(2 176 228);
+                }
+
+                .header_link_janr {
+                    &:hover {
+                        background-color: rgb(252 26 63 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(252 26 63);
+                }
+
+                .header_link_yil {
+                    &:hover {
+                        background-color: rgb(255 193 70 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(255 193 70)
+                }
+
+                .header_link_mamlakat {
+                    &:hover {
+                        background-color: rgb(155 89 182 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(155 89 182)
+                }
+
+                .header_link_kinoyangiliklari {
+                    &:hover {
+                        background-color: rgb(255 105 7 / 40%)
+                    }
+
+                    border-bottom: 1px solid rgb(255 105 7)
+                }
+            }
+        }
+    }
+
+    .header_story {
+        height: 80px;
+        background-color: #161d25;
+
+        .header_story_box {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        }
+    }
+
+    .header_bottom {
+        height: 200px;
+        background-color: #131a20;
+        border-bottom: 1px solid #313842;
+
+        .header_bottom_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .header_bottom_btns {
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .header_bottom_left {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    gap: 10px;
+
+                    .header_bottom_btn {
+                        &:hover {
+                            background-color: rgb(82, 100, 128, 0.5);
+                            transition: all ease 500ms;
+                        }
+
+                        &:active {
+                            background-color: #222933;
+                            color: white;
+                            transition: all ease 500ms;
+                        }
+
+                        transition: all ease 500ms;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .contact {
+                            svg {
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+
+                        padding: 0 10px 0 12px;
+                        background-color: #222933;
+                        color: #99b1d4;
+                        border: 1px solid rgb(255 255 255 / 15%);
+                        height: 40px;
+                        line-height: 37px;
+                        border-radius: 5px;
+                        outline: none;
+                    }
+                }
+
+                .header_bottom_right {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    gap: 10px;
+
+                    .header_bottom_btn {
+                        &:hover {
+                            background-color: rgb(82, 100, 128, 0.5);
+                            transition: all ease 500ms;
+                        }
+
+                        &:active {
+                            background-color: #222933;
+                            color: white;
+                            transition: all ease 500ms;
+                        }
+
+                        transition: all ease 500ms;
+                        padding: 0 8px 0 8px;
+                        background-color: #222933;
+                        color: #99b1d4;
+                        border: 1px solid rgb(255 255 255 / 15%);
+                        height: 40px;
+                        border-radius: 5px;
+                        outline: none;
+                    }
+                }
+            }
+
+            .header_bottom_search {
+                &:active {
+                    background-color: #222933;
+
+                    input::placeholder {
+                        color: white;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgb(82, 100, 128, 0.5);
+                    transition: all ease 300ms;
+
+                    input::placeholder {}
+                }
+
+                &.hover_effect:hover {
+                    background-color: #222933;
+                    color: #99b1d4;
+
+                    input::placeholder {
+                        color: #99b1d4;
+                    }
+                }
+
+                transition: all ease 300ms;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px 0 12px;
+                background-color: #222933;
+                color: #99b1d4;
+                height: 40px;
+                border: 1px solid rgb(255 255 255 / 15%);
+                border-radius: 3px;
+                outline: none;
+
+                .header_bottom_search_in {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    color: #99b1d4;
+                    font-style: italic;
+                    font-size: 14px;
+                    line-height: 40px;
+                    padding: 0 40px 0 10px;
+
+
+                }
+
+                input::placeholder {
+                    color: #99b1d4;
+                }
+            }
+        }
+    }
+}
